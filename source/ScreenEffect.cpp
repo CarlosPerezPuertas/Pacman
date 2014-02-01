@@ -39,7 +39,6 @@ void ScreenEffect::update(sf::Time df)
 		sprite.setColor(color);
 
 		if (is_clearing == true) clear_rectangle.setFillColor(color);
-
 	}	
 }
 

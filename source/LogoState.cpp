@@ -21,7 +21,7 @@ LogoState::LogoState(StateStack &c_state_stack, sf::RenderWindow &c_window, Play
 	setTransitionState(Transitions::None);
 	texture.loadFromFile("textures/Logotipo.png");
 	sprite.setTexture(texture);
-	sprite.setPosition(sf::Vector2f(0.f, +100.f));
+	sprite.setPosition(sf::Vector2f(0.f, 150.f));
 }
 
 
@@ -61,7 +61,12 @@ void LogoState::enterDraw()
 void LogoState::exitUpdate(sf::Time df)
 {
 	exit_effect.update(df);
-	if (!exit_effect.isRunning()) push(2);
+	if (!exit_effect.isRunning())
+	{
+		push(StateName::Game);
+		setTransitionState(Transitions::OnEnter);
+	}
+	
 }
 
 

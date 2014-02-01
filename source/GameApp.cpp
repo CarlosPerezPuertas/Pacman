@@ -6,14 +6,18 @@
 
 
 
+
 GameApp::GameApp() :
-  window(sf::VideoMode(800, 800), "Pacman")
+  window(sf::VideoMode(800, 900), "Pacman")
 , TimePerFrame(sf::seconds(1.f / MAX_FPS))
-, timeSinceLastUpdate(TimePerFrame)
 , frame_counter(0)
 , OneSecondCounter(sf::Time::Zero)
 , state_stack(window, player, texture_generator)
 {
+	window.resetGLStates();
+	window.setVerticalSyncEnabled(true);
+	//window.setFramerateLimit(60);
+
 	state_stack.registerState<GameState>(StateName::Game);
 	state_stack.registerState<LogoState>(StateName::Logo);
 	state_stack.push(StateName::Logo);	
@@ -22,22 +26,31 @@ GameApp::GameApp() :
 void GameApp::run()
 {
 	sf::Clock clock;
-	timeSinceLastUpdate = sf::Time::Zero;
-
+	sf::Time timeSinceLastUpdate;
+	//sf::Time sleep_time;
+	
 	while (window.isOpen())
 	{
 		sf::Time elapsed = clock.restart();
 		timeSinceLastUpdate += elapsed;
 
-		while (timeSinceLastUpdate > TimePerFrame)
+		while (timeSinceLastUpdate >= elapsed)
 		{
 			timeSinceLastUpdate -= TimePerFrame;
 			readInput();
-			update(TimePerFrame);
+			update(TimePerFrame);	
 		}
 
+		//When elapsed is higher we don't wait //NEED TO BE FIXED IN SFML.
+		//if (TimePerFrame > elapsed)
+		//{
+			//sleep_time = TimePerFrame - clock2.getElapsedTime();
+			//sf::sleep(sleep_time);
+		//}
+
+		update_fps(elapsed);
 		render();
-	}
+	}	
 }
 
 void GameApp::readInput()
@@ -56,7 +69,6 @@ void GameApp::readInput()
 void GameApp::update(sf::Time df)
 {
 	state_stack.update(df);
-	update_fps(df);
 }
 
 void GameApp::render()

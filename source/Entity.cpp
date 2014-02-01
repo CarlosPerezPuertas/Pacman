@@ -1,9 +1,10 @@
 #include "..\header\Entity.h"
 
 
-Entity::Entity() : 
-  speed(100.f) //100px/second
+Entity::Entity() 
+: SceneNode()
 {
+	
 }
 
 
@@ -11,9 +12,19 @@ Entity::~Entity()
 {
 }
 
-void Entity::move(const sf::Vector2f displacement)
+
+void Entity::scaleEntity(sf::Vector2f factor)
 {
-	setPosition(getPosition() + displacement);
+	scale(factor);
+
+	real_rect.left *= factor.x;
+	real_rect.top *= factor.y;
+	real_rect.width *= factor.x;
+	real_rect.height *= factor.y;
 }
+
+
+
+
 
 

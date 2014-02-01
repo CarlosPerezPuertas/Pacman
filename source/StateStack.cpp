@@ -65,7 +65,6 @@ void StateStack::pop()
 	if (!state_stack.empty())
 	{
 		state_stack.pop();
-		state_stack.top()->setTransitionState(Transitions::OnEnter);
 	}
 }
 

@@ -17,30 +17,89 @@ Player::Player() : current_action(GoRight)
 	go_right.category = Category::Pacman;
 	go_up.category = Category::Pacman;
 	go_down.category = Category::Pacman;
+
 	
 	go_left.action = get_function<Pacman>([](Pacman &pacman, sf::Time dt)
-	{ 
-		pacman.move(sf::Vector2f(-pacman.getSpeed() * dt.asSeconds(), 0));
-		if (pacman.isOtherAnimation(Animations::GoLeft)) pacman.changeAnimation(Animations::GoLeft);
+	{
+		if(pacman.isPossibleDirection(Direction::Left))
+		{
+			pacman.setCurrentDirection(Direction::Left);
+			pacman.move(sf::Vector2f(-pacman.getSpeed() * dt.asSeconds(), 0));
+			if (pacman.isOtherAnimation(Animations::GoLeft)) pacman.changeAnimation(Animations::GoLeft);
+		}
+		else if (pacman.isPossibleDirection(pacman.getCurrentDirection()))
+		{
+			pacman.moveByMap(pacman.getCurrentDirection(), dt);
+		}
+		else
+		{
+			pacman.stopAnimation();
+			pacman.setCurrentDirection(Direction::None);	
+		}	
+
+		
 	});
 
 	go_right.action = get_function<Pacman>([](Pacman &pacman, sf::Time dt)
 	{
-		pacman.move(sf::Vector2f(+pacman.getSpeed() * dt.asSeconds(), 0));
-		if (pacman.isOtherAnimation(Animations::GoRight)) pacman.changeAnimation(Animations::GoRight);
+		if (pacman.isPossibleDirection(Direction::Right))
+		{
+			pacman.setCurrentDirection(Direction::Right);
+			pacman.move(sf::Vector2f(+pacman.getSpeed() * dt.asSeconds(), 0));
+			if (pacman.isOtherAnimation(Animations::GoRight)) pacman.changeAnimation(Animations::GoRight);
+		}
+		else if (pacman.isPossibleDirection(pacman.getCurrentDirection()))
+		{
+			pacman.moveByMap(pacman.getCurrentDirection(), dt);
+		}
+		else
+		{
+			pacman.stopAnimation();
+			pacman.setCurrentDirection(Direction::None);
+		}
+
+		
 	});
 	
 	go_up.action = get_function<Pacman>([](Pacman &pacman, sf::Time dt)
 	{ 
-		pacman.move(sf::Vector2f(0, -pacman.getSpeed() * dt.asSeconds()));
-		if (pacman.isOtherAnimation(Animations::GoUp)) pacman.changeAnimation(Animations::GoUp);
+		if (pacman.isPossibleDirection(Direction::Up))
+		{
+			pacman.setCurrentDirection(Direction::Up);
+			pacman.move(sf::Vector2f(0, -pacman.getSpeed() * dt.asSeconds()));
+			if (pacman.isOtherAnimation(Animations::GoUp)) pacman.changeAnimation(Animations::GoUp);
+		}
+		else if (pacman.isPossibleDirection(pacman.getCurrentDirection()))
+		{
+			pacman.moveByMap(pacman.getCurrentDirection(), dt);
+		}
+		else
+		{
+			pacman.stopAnimation();
+			pacman.setCurrentDirection(Direction::None);
+		}
+
 		
 	});
 	
 	go_down.action = get_function<Pacman>([](Pacman &pacman, sf::Time dt)
 	{ 
-		pacman.move(sf::Vector2f(0, pacman.getSpeed() * dt.asSeconds()));
-		if (pacman.isOtherAnimation(Animations::GoDown)) pacman.changeAnimation(Animations::GoDown);	
+		if (pacman.isPossibleDirection(Direction::Down))
+		{
+			pacman.setCurrentDirection(Direction::Down);
+			pacman.move(sf::Vector2f(0, pacman.getSpeed() * dt.asSeconds()));
+			if (pacman.isOtherAnimation(Animations::GoDown)) pacman.changeAnimation(Animations::GoDown);
+		}
+
+		else if (pacman.isPossibleDirection(pacman.getCurrentDirection()))
+		{
+			pacman.moveByMap(pacman.getCurrentDirection(), dt);
+		}
+		else
+		{
+			pacman.stopAnimation();
+			pacman.setCurrentDirection(Direction::None);
+		}
 	});
 
 	action_to_command[GoLeft]  = go_left;
@@ -53,7 +112,7 @@ Player::Player() : current_action(GoRight)
 
 void Player::updateInput(CommandQueue &command_queue)
 {
-
+	
 	for (auto &itr : key_to_action)
 	{
 		//If the key is pressed add to the set. If not then delete from the set.
