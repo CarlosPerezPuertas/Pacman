@@ -1,20 +1,18 @@
 #pragma once
 
-#include "Entity.h"
+#include "MoveableObject.h"
 
 
-enum Animations
+
+enum class PacmanBehaviour
 {
-	GoLeft,
-	GoRight,
-	GoUp,
-	GoDown
+	Chase,
+	Escape
 };
 
 
 
-
-class Pacman : public Entity
+class Pacman : public MoveableObject
 {
 	public:
 	    Pacman(Textures::Type type, TextureGenerator &tg);
@@ -22,21 +20,33 @@ class Pacman : public Entity
 
 		virtual void drawCurrent(sf::RenderTarget &target, sf::RenderStates states) const;
 		virtual void updateCurrent(CommandQueue &command_queue, const sf::Time df);
-
 		virtual unsigned int getCategory() const;
-		
-		void changeAnimation(const Animations state);
+
+		inline void playAnimation(){ animation.play(); }
+		inline void stopAnimation(){ animation.setFrameIterator(1); }
 		bool isOtherAnimation(const Animations state){ return state != animation.getState(); }
+		void changeAnimation(const Animations state);
+		void restart();
+		
 		sf::FloatRect getGlobalRect();
+		sf::FloatRect getInteriorRect();
+		sf::Vector2f getCenter();
+		PacmanBehaviour getBehaviour();
 
 		void die();
 		bool isDead();
-		void addScore(int c_score);
-		
+
+		inline void addScore(int c_score) { score += c_score; }
+		inline int  getScore() { return score; }
+		inline bool isHigherScore(){ return score > high_score; }
+
 	private:
 		sf::Sprite  sprite;  
-		ga::Animation<Animations> animation;	
+		PacmanBehaviour behaviour;
 		int lifes;
 		int score;
+		int high_score;
+		ga::Animation<Animations> animation;
+		
 
 };

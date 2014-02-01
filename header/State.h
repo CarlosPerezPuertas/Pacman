@@ -13,6 +13,8 @@
 #include "Resources.h"
 #include "ResourceTypes.h"
 
+
+
 namespace Transitions
 {
 	enum State
@@ -23,8 +25,21 @@ namespace Transitions
 	};
 }
 
-class StateStack;
+namespace StateName
+{
+	enum Id
+	{
+		Logo,
+		StartMenu,
+		Game,
+		Pause,
+		Menu
+	};
+}
+
+
 class Player;
+class StateStack;
 
 
 class State
@@ -46,18 +61,25 @@ class State
 		Transitions::State getTransitionState(){ return transition_state; }
 		void setTransitionState(Transitions::State state){ transition_state = state; }
 
+		void setEnterLifetime(float time){ lifetime = sf::seconds(time); elapsed = lifetime; }
+
 
 	protected:
 		sf::RenderWindow& getWindow(){ return window; }
 		Player* getPlayer(){ return player; }
 		void push(unsigned int state);
+		void pop();
+
+	protected:
+		sf::Time elapsed;
+		sf::Time lifetime;
 		
 	private:
 		sf::RenderWindow &window;
 		StateStack *state_stack;
 		Player *player;
 		TextureGenerator *texture_factory;
-		Transitions::State transition_state;
+		Transitions::State transition_state;	
 		
 };
 

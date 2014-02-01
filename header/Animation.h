@@ -25,7 +25,8 @@ class Animation
 
 		inline void play(){ playing = true; }
 		inline void stop(){ playing = false; }
-		inline void reset(){ playing = false; frame_itr = frame_map[state].begin(); }
+		inline void reset(){ if (playing == true) { playing = false; frame_itr = frame_map[state].begin(); sprite.setTextureRect(*frame_itr); } }
+		inline void setFrameIterator(const int advance){ if (playing == true){ stop(); frame_itr = frame_map[state].begin(); std::advance(frame_itr, 1); sprite.setTextureRect(*frame_itr); } }
 		inline bool isPlaying(){ return playing; }
 
 	private:
@@ -54,7 +55,7 @@ sprite(c_sprite)     //link with the sprite of the entity
 }
 
 
-//If animation is playing then update depending of the frame rate of the animation
+//If animation is playing then update depending on the frame rate of the animation
 template <typename States>
 void Animation<States>::update(const sf::Time dt)
 {

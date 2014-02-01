@@ -19,9 +19,11 @@ class GameState : public State
 		virtual void enterDraw();
 		virtual void exitDraw();
 
+		void updateEnterTimer(sf::Time dt);
+		inline bool isEnterEnd(){ return elapsed <= sf::Time::Zero; }
+
 	private:
 		World world;
-		sf::Time game_time;
 		sf::Time enter_time;
 		sf::Time exit_time;
 

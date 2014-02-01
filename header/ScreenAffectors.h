@@ -12,8 +12,8 @@ class FadeAffector : public ScreenAffector
 		virtual void init(ScreenEffect &effect);
 		Affector createAffector();
 
-		const double& getInit() const { return init_alpha; }
-		const double& getEnd()  const { return end_alpha; }
+		const double getInit() const { return init_alpha; }
+		const double getEnd()  const { return end_alpha; }
 
 	private:
 		double init_alpha;

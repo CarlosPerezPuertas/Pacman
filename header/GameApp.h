@@ -8,22 +8,13 @@
 #include "Player.h"
 #include "CommandQueue.h"
 #include "World.h"
+#include <math.h>
 
 #include "StateStack.h"
+#include "State.h"
 
-const float MAX_FPS = 60;
+const float MAX_FPS = 60.f;
 
-namespace StateName
-{
-	enum Id
-	{
-		Logo,
-		StartMenu,
-		Game,
-		Pause,
-		Menu
-	};
-}
 
 //class StateStack;
 
@@ -46,7 +37,6 @@ class GameApp
 		sf::Event event;
 		StateStack state_stack;
 
-		sf::Time timeSinceLastUpdate;
 		sf::Time TimePerFrame;
 		sf::Time OneSecondCounter;
 		float frame_counter;

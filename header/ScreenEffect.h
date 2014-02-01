@@ -59,6 +59,7 @@ class ScreenEffect : public sf::Drawable, public sf::Transformable
 		void setTexture(sf::Texture &texture);
 		void setTexture(sf::Vector2i rect, sf::Color color);
 		void setLifeTime(sf::Time life_time){ this->life_time = life_time; }
+		sf::Time getLifeTime() { return elapsed; }
 		void setAlpha(sf::Uint8 alpha)
 		{ 
 			sprite.setColor(sf::Color(color.r, color.g, color.b, alpha)); 

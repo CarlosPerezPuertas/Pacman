@@ -16,7 +16,7 @@ struct Command
 
 struct CommandCollision
 {
-	std::function<void(SceneNode&, SceneNode&, sf::Time)> action;
+	std::function<void(SceneNode&, SceneNode&)> action;
 	unsigned int category;
 };
 
@@ -30,14 +30,14 @@ std::function<void(SceneNode&, sf::Time)> get_function(callback c)
 }
 
 template<typename object1, typename object2, typename callback>
-std::function<void(SceneNode&, SceneNode&, sf::Time)> get_function_collision(callback c)
+std::function<void(SceneNode&, SceneNode&)> get_function_collision(callback c)
 //std::function<void(std::pair<SceneNode&, SceneNode&>&, sf::Time)> get_function_collision(callback c)
 {
-	return[=](SceneNode& node1, SceneNode& node2, sf::Time df)
+	return[=](SceneNode& node1, SceneNode& node2)
 	{
 		//std::pair<object1&, object2&> pair = std::make_pair(static_cast<object1&>(node1), static_cast<object2&>(node2));
 	
-		c(static_cast<object1&>(node1), static_cast<object2&>(node2), df);
+		c(static_cast<object1&>(node1), static_cast<object2&>(node2));
 	};
 }
 
