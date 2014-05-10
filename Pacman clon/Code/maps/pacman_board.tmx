@@ -1,0 +1,2289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="33" tilewidth="12" tileheight="12">
+ <tileset firstgid="1" name="Collision" tilewidth="12" tileheight="12">
+  <image source="CollisionTiles.png" width="48" height="12"/>
+  <tile id="0">
+   <properties>
+    <property name="Collidable" value="False"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Collidable" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="pacman sprite-sheet definitivo" tilewidth="12" tileheight="12">
+  <image source="labyrinth.png" trans="ff00ff" width="288" height="72"/>
+ </tileset>
+ <tileset firstgid="149" name="small_dot" tilewidth="12" tileheight="12">
+  <image source="small_dot.png" width="12" height="12"/>
+ </tileset>
+ <tileset firstgid="150" name="big_dot" tilewidth="12" tileheight="12">
+  <image source="big_dot.png" width="12" height="12"/>
+ </tileset>
+ <layer name="Collision" width="30" height="33" opacity="0.35">
+  <data>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+  </data>
+ </layer>
+ <layer name="Walls" width="30" height="33">
+  <data>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="11"/>
+   <tile gid="12"/>
+   <tile gid="32"/>
+   <tile gid="33"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="37"/>
+   <tile gid="38"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="36"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="126"/>
+   <tile gid="125"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="126"/>
+   <tile gid="125"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="125"/>
+   <tile gid="126"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="80"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="128"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="126"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="127"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="18"/>
+   <tile gid="19"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="84"/>
+   <tile gid="104"/>
+   <tile gid="105"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="44"/>
+   <tile gid="45"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="126"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="128"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="125"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="42"/>
+   <tile gid="43"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="107"/>
+   <tile gid="108"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="68"/>
+   <tile gid="69"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="22"/>
+   <tile gid="23"/>
+   <tile gid="24"/>
+   <tile gid="25"/>
+   <tile gid="25"/>
+   <tile gid="26"/>
+   <tile gid="27"/>
+   <tile gid="28"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="66"/>
+   <tile gid="67"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="12"/>
+   <tile gid="0"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="92"/>
+   <tile gid="93"/>
+   <tile gid="0"/>
+   <tile gid="128"/>
+   <tile gid="127"/>
+   <tile gid="0"/>
+   <tile gid="46"/>
+   <tile gid="47"/>
+   <tile gid="48"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="50"/>
+   <tile gid="51"/>
+   <tile gid="52"/>
+   <tile gid="0"/>
+   <tile gid="128"/>
+   <tile gid="127"/>
+   <tile gid="0"/>
+   <tile gid="90"/>
+   <tile gid="91"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="72"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="70"/>
+   <tile gid="71"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="75"/>
+   <tile gid="76"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="18"/>
+   <tile gid="19"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="44"/>
+   <tile gid="45"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="94"/>
+   <tile gid="95"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="99"/>
+   <tile gid="100"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="42"/>
+   <tile gid="43"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="68"/>
+   <tile gid="69"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="66"/>
+   <tile gid="67"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="11"/>
+   <tile gid="12"/>
+   <tile gid="32"/>
+   <tile gid="33"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="92"/>
+   <tile gid="93"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="125"/>
+   <tile gid="126"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="90"/>
+   <tile gid="91"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="36"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="126"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="125"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="31"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="126"/>
+   <tile gid="30"/>
+   <tile gid="127"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="17"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="39"/>
+   <tile gid="40"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="126"/>
+   <tile gid="125"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="87"/>
+   <tile gid="30"/>
+   <tile gid="88"/>
+   <tile gid="89"/>
+   <tile gid="63"/>
+   <tile gid="64"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="125"/>
+   <tile gid="126"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="128"/>
+   <tile gid="127"/>
+   <tile gid="0"/>
+   <tile gid="111"/>
+   <tile gid="78"/>
+   <tile gid="112"/>
+   <tile gid="113"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="87"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="127"/>
+   <tile gid="128"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="31"/>
+   <tile gid="0"/>
+   <tile gid="53"/>
+   <tile gid="55"/>
+   <tile gid="0"/>
+   <tile gid="126"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="127"/>
+   <tile gid="128"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="30"/>
+   <tile gid="125"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="111"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="77"/>
+   <tile gid="79"/>
+   <tile gid="0"/>
+   <tile gid="128"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="78"/>
+   <tile gid="127"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="56"/>
+   <tile gid="57"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="59"/>
+   <tile gid="60"/>
+   <tile gid="80"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="84"/>
+   <tile gid="104"/>
+   <tile gid="105"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="106"/>
+   <tile gid="107"/>
+   <tile gid="108"/>
+  </data>
+ </layer>
+ <objectgroup name="Player" width="30" height="33">
+  <object name="Pacman" x="168" y="288" width="24" height="12"/>
+ </objectgroup>
+ <objectgroup name="Enemies" width="30" height="33">
+  <object name="Blinky" x="168" y="144" width="24" height="12"/>
+  <object name="Pinky" x="144" y="180" width="24" height="12"/>
+  <object name="Inky" x="168" y="180" width="24" height="12"/>
+  <object name="Clyde" x="192" y="180" width="24" height="12"/>
+ </objectgroup>
+ <objectgroup name="Small dot" width="30" height="33">
+  <object gid="149" x="156" y="300"/>
+  <object gid="149" x="156" y="288"/>
+  <object gid="149" x="156" y="276"/>
+  <object gid="149" x="156" y="264"/>
+  <object gid="149" x="144" y="264"/>
+  <object gid="149" x="120" y="264"/>
+  <object gid="149" x="132" y="264"/>
+  <object gid="149" x="108" y="264"/>
+  <object gid="149" x="96" y="264"/>
+  <object gid="149" x="84" y="264"/>
+  <object gid="149" x="60" y="264"/>
+  <object gid="149" x="72" y="264"/>
+  <object gid="149" x="48" y="264"/>
+  <object gid="149" x="36" y="264"/>
+  <object gid="149" x="24" y="264"/>
+  <object gid="149" x="24" y="276"/>
+  <object gid="149" x="24" y="288"/>
+  <object gid="149" x="36" y="300"/>
+  <object gid="149" x="48" y="300"/>
+  <object gid="149" x="48" y="312"/>
+  <object gid="149" x="48" y="324"/>
+  <object gid="149" x="48" y="336"/>
+  <object gid="149" x="36" y="336"/>
+  <object gid="149" x="24" y="336"/>
+  <object gid="149" x="24" y="372"/>
+  <object gid="149" x="24" y="360"/>
+  <object gid="149" x="24" y="348"/>
+  <object gid="149" x="36" y="372"/>
+  <object gid="149" x="48" y="372"/>
+  <object gid="149" x="60" y="372"/>
+  <object gid="149" x="72" y="372"/>
+  <object gid="149" x="72" y="372"/>
+  <object gid="149" x="84" y="372"/>
+  <object gid="149" x="96" y="372"/>
+  <object gid="149" x="108" y="372"/>
+  <object gid="149" x="120" y="372"/>
+  <object gid="149" x="132" y="372"/>
+  <object gid="149" x="216" y="372"/>
+  <object gid="149" x="204" y="372"/>
+  <object gid="149" x="180" y="372"/>
+  <object gid="149" x="168" y="372"/>
+  <object gid="149" x="156" y="372"/>
+  <object gid="149" x="144" y="372"/>
+  <object gid="149" x="156" y="360"/>
+  <object gid="149" x="156" y="348"/>
+  <object gid="149" x="156" y="336"/>
+  <object gid="149" x="144" y="336"/>
+  <object gid="149" x="132" y="336"/>
+  <object gid="149" x="120" y="336"/>
+  <object gid="149" x="120" y="324"/>
+  <object gid="149" x="120" y="312"/>
+  <object gid="149" x="120" y="300"/>
+  <object gid="149" x="132" y="300"/>
+  <object gid="149" x="144" y="300"/>
+  <object gid="149" x="108" y="300"/>
+  <object gid="149" x="96" y="300"/>
+  <object gid="149" x="84" y="300"/>
+  <object gid="149" x="84" y="312"/>
+  <object gid="149" x="84" y="324"/>
+  <object gid="149" x="84" y="336"/>
+  <object gid="149" x="72" y="336"/>
+  <object gid="149" x="60" y="336"/>
+  <object gid="149" x="84" y="288"/>
+  <object gid="149" x="84" y="276"/>
+  <object gid="149" x="84" y="252"/>
+  <object gid="149" x="84" y="240"/>
+  <object gid="149" x="84" y="228"/>
+  <object gid="149" x="84" y="216"/>
+  <object gid="149" x="84" y="204"/>
+  <object gid="149" x="84" y="192"/>
+  <object gid="149" x="84" y="180"/>
+  <object gid="149" x="84" y="168"/>
+  <object gid="149" x="84" y="156"/>
+  <object gid="149" x="84" y="144"/>
+  <object gid="149" x="84" y="132"/>
+  <object gid="149" x="84" y="120"/>
+  <object gid="149" x="72" y="120"/>
+  <object gid="149" x="60" y="120"/>
+  <object gid="149" x="48" y="120"/>
+  <object gid="149" x="36" y="120"/>
+  <object gid="149" x="24" y="120"/>
+  <object gid="149" x="24" y="108"/>
+  <object gid="149" x="24" y="96"/>
+  <object gid="149" x="24" y="84"/>
+  <object gid="149" x="36" y="84"/>
+  <object gid="149" x="48" y="84"/>
+  <object gid="149" x="60" y="84"/>
+  <object gid="149" x="72" y="84"/>
+  <object gid="149" x="84" y="84"/>
+  <object gid="149" x="84" y="96"/>
+  <object gid="149" x="84" y="108"/>
+  <object gid="149" x="84" y="72"/>
+  <object gid="149" x="84" y="60"/>
+  <object gid="149" x="84" y="48"/>
+  <object gid="149" x="84" y="36"/>
+  <object gid="149" x="72" y="36"/>
+  <object gid="149" x="60" y="36"/>
+  <object gid="149" x="48" y="36"/>
+  <object gid="149" x="36" y="36"/>
+  <object gid="149" x="24" y="36"/>
+  <object gid="149" x="24" y="48"/>
+  <object gid="149" x="96" y="36"/>
+  <object gid="149" x="108" y="36"/>
+  <object gid="149" x="120" y="36"/>
+  <object gid="149" x="132" y="36"/>
+  <object gid="149" x="144" y="36"/>
+  <object gid="149" x="156" y="36"/>
+  <object gid="149" x="156" y="48"/>
+  <object gid="149" x="156" y="60"/>
+  <object gid="149" x="156" y="72"/>
+  <object gid="149" x="156" y="84"/>
+  <object gid="149" x="144" y="84"/>
+  <object gid="149" x="132" y="84"/>
+  <object gid="149" x="120" y="84"/>
+  <object gid="149" x="108" y="84"/>
+  <object gid="149" x="96" y="84"/>
+  <object gid="149" x="120" y="96"/>
+  <object gid="149" x="120" y="108"/>
+  <object gid="149" x="120" y="120"/>
+  <object gid="149" x="132" y="120"/>
+  <object gid="149" x="144" y="120"/>
+  <object gid="149" x="156" y="120"/>
+  <object gid="149" x="192" y="120"/>
+  <object gid="149" x="204" y="120"/>
+  <object gid="149" x="216" y="120"/>
+  <object gid="149" x="228" y="120"/>
+  <object gid="149" x="228" y="108"/>
+  <object gid="149" x="228" y="96"/>
+  <object gid="149" x="228" y="84"/>
+  <object gid="149" x="216" y="84"/>
+  <object gid="149" x="204" y="84"/>
+  <object gid="149" x="192" y="84"/>
+  <object gid="149" x="180" y="84"/>
+  <object gid="149" x="168" y="84"/>
+  <object gid="149" x="192" y="72"/>
+  <object gid="149" x="192" y="60"/>
+  <object gid="149" x="192" y="48"/>
+  <object gid="149" x="240" y="84"/>
+  <object gid="149" x="252" y="84"/>
+  <object gid="149" x="264" y="84"/>
+  <object gid="149" x="264" y="60"/>
+  <object gid="149" x="264" y="72"/>
+  <object gid="149" x="264" y="48"/>
+  <object gid="149" x="264" y="36"/>
+  <object gid="149" x="252" y="36"/>
+  <object gid="149" x="240" y="36"/>
+  <object gid="149" x="228" y="36"/>
+  <object gid="149" x="216" y="36"/>
+  <object gid="149" x="204" y="36"/>
+  <object gid="149" x="192" y="36"/>
+  <object gid="149" x="276" y="36"/>
+  <object gid="149" x="288" y="36"/>
+  <object gid="149" x="300" y="36"/>
+  <object gid="149" x="312" y="36"/>
+  <object gid="149" x="324" y="36"/>
+  <object gid="149" x="324" y="48"/>
+  <object gid="149" x="324" y="72"/>
+  <object gid="149" x="324" y="84"/>
+  <object gid="149" x="312" y="84"/>
+  <object gid="149" x="300" y="84"/>
+  <object gid="149" x="288" y="84"/>
+  <object gid="149" x="276" y="84"/>
+  <object gid="149" x="324" y="96"/>
+  <object gid="149" x="324" y="108"/>
+  <object gid="149" x="324" y="120"/>
+  <object gid="149" x="312" y="120"/>
+  <object gid="149" x="300" y="120"/>
+  <object gid="149" x="288" y="120"/>
+  <object gid="149" x="276" y="120"/>
+  <object gid="149" x="264" y="120"/>
+  <object gid="149" x="264" y="108"/>
+  <object gid="149" x="264" y="96"/>
+  <object gid="149" x="264" y="132"/>
+  <object gid="149" x="264" y="144"/>
+  <object gid="149" x="264" y="156"/>
+  <object gid="149" x="264" y="156"/>
+  <object gid="149" x="264" y="180"/>
+  <object gid="149" x="264" y="168"/>
+  <object gid="149" x="264" y="192"/>
+  <object gid="149" x="264" y="204"/>
+  <object gid="149" x="264" y="216"/>
+  <object gid="149" x="264" y="228"/>
+  <object gid="149" x="264" y="240"/>
+  <object gid="149" x="264" y="252"/>
+  <object gid="149" x="264" y="264"/>
+  <object gid="149" x="252" y="264"/>
+  <object gid="149" x="240" y="264"/>
+  <object gid="149" x="228" y="264"/>
+  <object gid="149" x="204" y="264"/>
+  <object gid="149" x="192" y="264"/>
+  <object gid="149" x="192" y="276"/>
+  <object gid="149" x="192" y="288"/>
+  <object gid="149" x="192" y="300"/>
+  <object gid="149" x="204" y="300"/>
+  <object gid="149" x="216" y="300"/>
+  <object gid="149" x="228" y="300"/>
+  <object gid="149" x="240" y="300"/>
+  <object gid="149" x="252" y="300"/>
+  <object gid="149" x="264" y="300"/>
+  <object gid="149" x="264" y="288"/>
+  <object gid="149" x="264" y="276"/>
+  <object gid="149" x="276" y="264"/>
+  <object gid="149" x="288" y="264"/>
+  <object gid="149" x="300" y="264"/>
+  <object gid="149" x="312" y="264"/>
+  <object gid="149" x="324" y="264"/>
+  <object gid="149" x="324" y="276"/>
+  <object gid="149" x="324" y="288"/>
+  <object gid="149" x="312" y="300"/>
+  <object gid="149" x="300" y="300"/>
+  <object gid="149" x="300" y="312"/>
+  <object gid="149" x="300" y="324"/>
+  <object gid="149" x="300" y="336"/>
+  <object gid="149" x="288" y="336"/>
+  <object gid="149" x="276" y="336"/>
+  <object gid="149" x="264" y="336"/>
+  <object gid="149" x="264" y="324"/>
+  <object gid="149" x="264" y="312"/>
+  <object gid="149" x="228" y="312"/>
+  <object gid="149" x="228" y="324"/>
+  <object gid="149" x="228" y="336"/>
+  <object gid="149" x="216" y="336"/>
+  <object gid="149" x="204" y="336"/>
+  <object gid="149" x="192" y="336"/>
+  <object gid="149" x="192" y="348"/>
+  <object gid="149" x="192" y="360"/>
+  <object gid="149" x="228" y="372"/>
+  <object gid="149" x="240" y="372"/>
+  <object gid="149" x="252" y="372"/>
+  <object gid="149" x="264" y="372"/>
+  <object gid="149" x="276" y="372"/>
+  <object gid="149" x="276" y="372"/>
+  <object gid="149" x="288" y="372"/>
+  <object gid="149" x="300" y="372"/>
+  <object gid="149" x="312" y="372"/>
+  <object gid="149" x="324" y="372"/>
+  <object gid="149" x="324" y="360"/>
+  <object gid="149" x="324" y="348"/>
+  <object gid="149" x="324" y="336"/>
+  <object gid="149" x="312" y="336"/>
+  <object gid="149" x="24" y="72"/>
+  <object gid="149" x="192" y="372"/>
+  <object gid="149" x="216" y="264"/>
+ </objectgroup>
+ <objectgroup name="Big dot" width="30" height="33">
+  <object gid="150" x="24" y="60"/>
+  <object gid="150" x="24" y="300"/>
+  <object gid="150" x="324" y="300"/>
+  <object gid="150" x="324" y="60"/>
+ </objectgroup>
+ <objectgroup name="Warp" width="30" height="33">
+  <object name="Warp" x="16" y="183" width="5" height="5">
+   <properties>
+    <property name="direction" value="2"/>
+    <property name="x" value="325"/>
+    <property name="y" value="186"/>
+   </properties>
+  </object>
+  <object name="Warp" x="339" y="183" width="4" height="5">
+   <properties>
+    <property name="direction" value="1"/>
+    <property name="x" value="36"/>
+    <property name="y" value="186"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
